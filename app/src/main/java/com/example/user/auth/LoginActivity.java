@@ -38,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
 
         // Configurar el inicio de sesión para solicitar la ID del usuario, la dirección de correo electrónico y el perfil
         // básico . ID y perfil básico están incluidos en DEFAULT_SIGN_IN.
-
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
@@ -105,11 +104,8 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Authentication Failed.", Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
-
-                        // ...
                     }
                 });
     }
-
 
 }
